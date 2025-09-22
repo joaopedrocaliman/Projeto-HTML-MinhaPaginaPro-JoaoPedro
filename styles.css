@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #0050ac, #9354b9, #6a82fb);
+    height: 900px;
+}
+
+h1 {
+    color: black;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2, h3, h4 {
+    color: black;
+    font-size: 23px;
+    font-family: 'Playfair Display', serif;
+}
+
+h5 {
+    color: black;
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p, li {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    color: #b2fefa;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.img-senai {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    height: 45px;
+    transition: transform 0.4s ease;
+}
+
+.img-senai:hover {
+    transform: scale(1.1);
+}
+
+.link-senai {
+    display: inline-block;
+}
+
+.link-senai img {
+    display: block; 
+    width: 100%;
+}
+
+.centralizado {
+    text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 0 auto;
+    display: inline-block; 
+    text-align: left;
+}
+
+.materias {
+    margin-bottom: 20px;
+}
+
+.linguagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.linguagens img {
+    width: 80px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.linguagens img:hover {
+    transform: scale(1.1);
+}
+
+.redes-sociais a img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.img-html img {
+    width: 110px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.img-html img:hover {
+    transform: scale(1.1);
+}
+
+.img-php img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.img-php img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #fff;
+    width: 100vw;
+    margin: 0;
+    padding: 40px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    background-color: #fff;
+    width: 100vw;
+    margin: 0;
+    padding: 40px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.assinatura {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 10px;
+    color: #555;
+    font-family: Arial, sans-serif;
+}
