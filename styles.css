@@ -27,7 +27,6 @@ header {
     z-index: 999;
 }
 
-/* TITULOS ETC */
 h1 {
     color: black;
     font-size: 30px;
@@ -251,7 +250,6 @@ footer {
     flex-direction: column;
     gap: 20px;
     box-shadow: -2px 0 10px rgba(0,0,0,0.3);
-    /* Transição mais suave e visível */
     transition: right 0.55s ease;
     z-index: 1000;
 }
