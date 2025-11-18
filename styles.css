@@ -298,7 +298,6 @@ footer {
   color: white;
 }
 
-
 /* Desativa scroll-behavior nativo para evitar conflitos com a rolagem JS */
 html {
     scroll-behavior: smooth;
