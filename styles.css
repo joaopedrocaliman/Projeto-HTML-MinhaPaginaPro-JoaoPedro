@@ -1,10 +1,33 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(180deg, #0050ac, #9354b9, #6a82fb);
-    height: 900px;
+    background: #0050ac;
+    min-height: 100vh;
+    padding-top: 80px;
 }
 
+section, div[id] {
+    scroll-margin-top: 120px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    gap: 50px;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+/* TITULOS ETC */
 h1 {
     color: black;
     font-size: 30px;
@@ -35,22 +58,20 @@ p, li {
 a {
     color: #b2fefa;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .img-senai {
-    float: none;
     display: block;
-    margin: 0 auto;
     height: 45px;
 }
 
 .link-senai {
     display: inline-block;
-}
-
-.link-senai img {
-    display: block; 
-    width: 100%;
 }
 
 .centralizado {
@@ -61,7 +82,7 @@ ul {
     list-style-position: inside;
     padding-left: 0;
     margin: 0 auto;
-    display: inline-block; 
+    display: inline-block;
     text-align: left;
 }
 
@@ -97,43 +118,24 @@ ul {
     display: inline-block;
 }
 
-.img-html img {
-    width: 110px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.img-html img:hover {
-    transform: scale(1.1);
-}
-
-.img-php img {
+.img-html img, .img-php img {
     width: 100px;
     height: auto;
     transition: transform 0.3s ease;
 }
 
-.img-php img:hover {
+.img-html img:hover, .img-php img:hover {
     transform: scale(1.1);
 }
 
 footer {
-    background-color: #fff;
+    background-color: white;
     width: 100vw;
     margin: 0;
     padding: 40px 0;
     box-sizing: border-box;
     text-align: center;
-}
-
-footer {
     position: relative;
-    background-color: #fff;
-    width: 100vw;
-    margin: 0;
-    padding: 40px 0;
-    box-sizing: border-box;
-    text-align: center;
 }
 
 .assinatura {
@@ -141,6 +143,126 @@ footer {
     bottom: 5px;
     left: 10px;
     font-size: 10px;
-    color: #555;
+    color: black;
     font-family: Arial, sans-serif;
+}
+
+.titulo-perfil {
+    margin: 0;
+    font-size: 30px;
+    color: black;
+}
+
+.senai-logo {
+    position: absolute;
+    left: 20px;
+}
+
+.perfil-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.foto-perfil {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+#cursos {
+    margin: 40px auto;
+    text-align: center;
+}
+
+#cursos h2 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.lista-cursos {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.lista-cursos li {
+    background-color: rgba(255,255,255,0.1);
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+}
+
+/* ---------------- MENU HAMBURGUER ------------------ */
+
+.menu-btn {
+    width: 35px;
+    height: 28px;
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-btn div {
+    width: 100%;
+    height: 5px;
+    background: black;
+    border-radius: 5px;
+    transition: 0.45s ease;
+}
+
+.menu-btn.ativo div:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+.menu-btn.ativo div:nth-child(2) {
+    opacity: 0;
+}
+.menu-btn.ativo div:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background: white;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+    /* Transição mais suave e visível */
+    transition: right 0.55s ease;
+    z-index: 1000;
+}
+
+.menu-mobile.ativo {
+    right: 0;
+}
+
+.menu-mobile a {
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Desativa scroll-behavior nativo para evitar conflitos com a rolagem JS */
+html {
+    scroll-behavior: smooth;
 }

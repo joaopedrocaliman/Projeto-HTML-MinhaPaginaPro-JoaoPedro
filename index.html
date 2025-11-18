@@ -8,71 +8,107 @@
 </head>
 <body>
     <div class="centralizado">
+
         <header>
-            <section>
-                <br>
+            <section class="senai-logo">
                 <a href="https://www.sp.senai.br" target="_blank" rel="noopener noreferrer" class="link-senai">
                     <img class="img-senai" src="img_senai.png" alt="Logo SENAI">
                 </a>
             </section>
-            <section>
-                <h1>Meu Perfil - João Pedro</h1>
+
+            <section class="perfil-titulo">
+                <h1 class="titulo-perfil">Meu Perfil - João Pedro</h1>
+                <img src="foto-minha.jpeg" alt="Foto de João Pedro" class="foto-perfil">
             </section>
         </header>
+
+        <div class="menu-btn" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav class="menu-mobile" id="menuMobile">
+            <a href="#perfil-bio">Sobre mim</a>
+            <a href="#formacao">Formação</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#materias">Matérias</a>
+            <a href="#redes-sociais">Contato</a>
+            <a href="#linguagens">Linguagens</a>
+        </nav>
 
         <main>
             <div id="perfil-bio">
                 <h2>Sobre mim:</h2>
-                <p>Estudante do curso técnico profissionalizante em desenvolvimento de sistemas.</p>
+                <p>
+                    Desenvolvedor Júnior e estudante dedicado do curso técnico profissionalizante em Desenvolvimento de Sistemas,<br> com foco em adquirir e aplicar conhecimento prático em programação, lógica e metodologias de software. <br> Possuo um diferencial estratégico, consolidado pela experiência prévia como Técnico de TI,<br> o que me confere uma visão abrangente sobre infraestrutura, suporte e o ciclo de vida completo de sistemas. <br> Busco aplicar esta base dupla de Desenvolvimento e TI para criar soluções eficientes e de alto desempenho.<br><br>
+                </p>
             </div>
 
-            <div class="conquistas">
+            <div id="formacao" class="conquistas">
                 <h3>Formação:</h3>
                 <ul>
                     <li>Formação Nível Fundamental 1</li>
                     <li>Formação Nível Fundamental 2</li>
                     <li>Formando Nível Ensino Médio/Técnico</li>
+                    <li>SESI - Santa Rita do Passa Quatro</li>
+                    <li>SENAI - São Carlos</li>
                 </ul>
             </div>
         </main>
 
-        <div>
-            <section class="redes-sociais">
-                <h4>Contato:</h4>
-                <a href="https://instagram.com/jp_caliman" target="_blank" rel="noopener noreferrer">
-                    Instagram
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
-                </a>
-                <br>
-                <a href="https://github.com/joaopedrocaliman" target="_blank" rel="noopener noreferrer">
-                    GitHub
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
-                </a>
-                <br>
-                <a href="mailto:jpbcaliman@gmail.com" target="_blank" rel="noopener noreferrer">
-                    Envie e-mail
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/014/440/980/small_2x/email-message-icon-design-in-blue-circle-png.png" alt="Email">
-                </a>
-            </section>
-        </div>
-
-        <section class="materias">
-            <h6>Matéria Estudadas:</h6>
-            <ul class="lista-materias">
-                <li>LPA-Lógica de programação e algorítimos</li>
-                <li>SO-Sistemas operacionais</li>
-                <li>ARIOT-Arquitetura de redes com IoT</li>
-                <li>LR-Levantamento de requisitos</li>
-                <li>LIMA-Linguagem de marcação</li>
-                <li>PBE-Programação back-end</li>
-                <li>BCD-Banco de dados</li>
-                <li>PSOF-Projetos de software</li>
+        <section id="cursos">
+            <h2>Cursos e Certificações:</h2>
+            <ul class="lista-cursos">
+                <li><strong>Curso Técnico em Desenvolvimento de Sistemas</strong> - SENAI (em andamento)</li>
+                <li><strong>Curso de Ética na Inteligência Artificial</strong> - SENAI (concluído)</li>
+                <li><strong>Curso de Segurança Cibernética</strong> - SENAI (concluído)</li>
+                <li><strong>Curso de Excel Básico</strong> - SENAI (concluído)</li>
+                <li><strong>Curso de Segurança no Trabalho</strong> - SENAI (concluído)</li>
+                <li><strong>Curso de Fluência em Fundamentos da IA</strong> - SENAI (concluído)</li>
+                <li><strong>Curso de Tecnologias de Descarbonização</strong> - SENAI (concluído)</li>
             </ul>
         </section>
+
+        <section id="materias" class="materias">
+            <h6>Matérias Estudadas:</h6>
+            <ul class="lista-materias">
+                <li>LPA - Lógica de programação e algoritmos</li>
+                <li>SO - Sistemas operacionais</li>
+                <li>ARIOT - Arquitetura de redes com IoT</li>
+                <li>LR - Levantamento de requisitos</li>
+                <li>LIMA - Linguagem de marcação</li>
+                <li>PBE - Programação back-end</li>
+                <li>BCD - Banco de dados</li>
+                <li>PSOF - Projetos de software</li>
+            </ul>
+
+        </section>
+
+        <section id="redes-sociais" class="redes-sociais">
+            <h4>Contato:</h4>
+            <a href="https://instagram.com/jp_caliman" target="_blank" rel="noopener noreferrer">Instagram
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+            </a><br>
+            <a href="https://github.com/joaopedrocaliman" target="_blank" rel="noopener noreferrer">GitHub
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+            </a><br>
+            <a href="mailto:jpbcaliman@gmail.com" target="_blank" rel="noopener noreferrer">Envie e-mail
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/014/440/980/small_2x/email-message-icon-design-in-blue-circle-png.png" alt="Email">
+            </a><br>
+            <a href="https://www.linkedin.com/in/joao-caliman/" target="_blank" rel="noopener noreferrer">LinkedIn
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt="LinkedIn">
+            </a><br>
+            <a href="https://wa.me/5519991824964?text=Olá!%20Vim%20pelo%20seu%20site%20de%20perfil%20e%20queria%20saber%20mais%20sobre%20seus%20serviços." target="_blank" rel="noopener noreferrer">WhatsApp
+                <img src="img-wpp.png" alt="WhatsApp">
+            </a>
+        </section>
+        <br><br><br>
     </div>
-    <footer>
+
+    <footer id="linguagens">
         <div>
-            <h5>Linguagens de Programação Trabalhadas:</h5>
+            <h5>Linguagens de Programação Estudadas:</h5>
         </div>
         <section class="linguagens">
             <a href="https://www.google.com/search?q=Python" target="_blank" rel="noopener noreferrer">
@@ -90,8 +126,13 @@
             <a class="img-php" href="https://www.google.com/search?q=PHP" target="_blank" rel="noopener noreferrer">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" alt="PHP">
             </a>
+            <a class="img-sql" href="https://www.google.com/search?q=SQL" target="_blank" rel="noopener noreferrer">
+                <img src="img-sql.png" alt="SQL">
+            </a>
         </section>
         <span class="assinatura">João Pedro Bentlin Caliman ®</span>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
+
