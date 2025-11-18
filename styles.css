@@ -184,11 +184,13 @@ footer {
     margin-bottom: 20px;
 }
 
-.lista-cursos {
+.lista-cursos a {
     list-style-type: none;
     padding: 0;
     display: inline-block;
     text-align: left;
+    color: inherit;
+    font: inherit;
 }
 
 .lista-cursos li {
@@ -198,6 +200,10 @@ footer {
     border-radius: 8px;
     color: white;
     font-size: 18px;
+}
+
+.lista-cursos a:hover {
+    text-decoration: underline;
 }
 
 /* ---------------- MENU HAMBURGUER ------------------ */
