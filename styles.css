@@ -268,6 +268,21 @@ footer {
     text-decoration: none;
 }
 
+.menu-mobile a {
+  display: block;     
+  padding: 15px 20px;
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.6s ease, color 0.6s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu-mobile a:hover {
+  background-color: black; 
+  color: white;
+}
+
+
 /* Desativa scroll-behavior nativo para evitar conflitos com a rolagem JS */
 html {
     scroll-behavior: smooth;
